@@ -1,0 +1,619 @@
+{
+    "info": {
+      "name": "reunion",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+			"name": "auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": {
+    "User_Name":"",
+    "Email":"",
+    "Password":""
+},
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/api/Auto/SignUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"Auto",
+								"SignUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": {
+    "Email":"",
+    "Password":""
+},
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/api/Auto/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"Auto",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},{"name": "user",
+    "item": [{
+          "name": "Add_user",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"id\":\"abc\",\"posts\":\"abc\",\"no_of_followers\":\"abc\",\"following\":\"abc\",\"userName\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Add_user",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Add_user"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetAll_user",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"id\":\"abc\",\"posts\":\"abc\",\"no_of_followers\":\"abc\",\"following\":\"abc\",\"userName\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_All_user",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_All_user"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Update_user",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"id\":\"abc\",\"posts\":\"abc\",\"no_of_followers\":\"abc\",\"following\":\"abc\",\"userName\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Update_user",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Update_user"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Delete_user",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"id\":\"abc\",\"posts\":\"abc\",\"no_of_followers\":\"abc\",\"following\":\"abc\",\"userName\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Delete_user",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Delete_user"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetById_user",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"id\":\"abc\",\"posts\":\"abc\",\"no_of_followers\":\"abc\",\"following\":\"abc\",\"userName\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_By_Id_user",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_By_Id_user"
+                  ]
+              }
+          },
+          "response": []
+      }]},{"name": "posts",
+    "item": [{
+          "name": "Add_posts",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"post_Id\":\"abc\",\"Title\":\"abc\",\"Description\":\"abc\",\"likes\":\"abc\",\"comments\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Add_posts",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Add_posts"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetAll_posts",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"post_Id\":\"abc\",\"Title\":\"abc\",\"Description\":\"abc\",\"likes\":\"abc\",\"comments\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_All_posts",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_All_posts"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Update_posts",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"post_Id\":\"abc\",\"Title\":\"abc\",\"Description\":\"abc\",\"likes\":\"abc\",\"comments\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Update_posts",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Update_posts"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Delete_posts",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"post_Id\":\"abc\",\"Title\":\"abc\",\"Description\":\"abc\",\"likes\":\"abc\",\"comments\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Delete_posts",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Delete_posts"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetById_posts",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"post_Id\":\"abc\",\"Title\":\"abc\",\"Description\":\"abc\",\"likes\":\"abc\",\"comments\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_By_Id_posts",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_By_Id_posts"
+                  ]
+              }
+          },
+          "response": []
+      }]},{"name": "comments",
+    "item": [{
+          "name": "Add_comments",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"comment_Id\":\"abc\",\"content\":\"abc\",\"replies\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Add_comments",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Add_comments"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetAll_comments",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"comment_Id\":\"abc\",\"content\":\"abc\",\"replies\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_All_comments",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_All_comments"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Update_comments",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"comment_Id\":\"abc\",\"content\":\"abc\",\"replies\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Update_comments",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Update_comments"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "Delete_comments",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"comment_Id\":\"abc\",\"content\":\"abc\",\"replies\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Delete_comments",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Delete_comments"
+                  ]
+              }
+          },
+          "response": []
+      },{
+          "name": "GetById_comments",
+          "request": {
+              "method": "POST",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/json",
+                      "type": "text"
+                  }
+              ],
+              "body": {
+        "mode": "raw",
+        "raw": "{  \"comment_Id\":\"abc\",\"content\":\"abc\",\"replies\":\"abc\"   }",
+        "options": {
+            "raw": {
+                "language": "json"
+            }
+        }
+    },
+              "url": {
+                  "raw": "http://localhost:3030/api/Auto/Get_By_Id_comments",
+                  "protocol": "http",
+                  "host": [
+                      "localhost"
+                  ],
+                  "port": "3030",
+                  "path": [
+                      "api",
+                      "Auto",
+                      "Get_By_Id_comments"
+                  ]
+              }
+          },
+          "response": []
+      }]}]
+    }
